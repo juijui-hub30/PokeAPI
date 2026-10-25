@@ -1,7 +1,6 @@
 import random
 import requests
 
-
 def fetch_pokemon_data(pokemon_name):
     url = f"https://pokeapi.co/api/v2/pokemon/{pokemon_name.lower().strip()}"
 
@@ -59,7 +58,6 @@ def start_game():
             print("Incorrect guess!")
     else:
         print(f"You've run out of attempts. The correct Pokémon was: {pokemon_stats['name']}.")
-
 
 if __name__ == "__main__":
     start_game()
